@@ -1,0 +1,12 @@
+create_clock -period 20.000 -name clk [get_ports MAX10_CLK1_50]
+
+set_false_path -from [get_ports {KEY[0]}]
+set_false_path -from [get_ports {KEY[1]}]
+set_false_path -from [get_ports {SW[*]}]
+set_false_path -to   [get_ports {LEDR[*]}]
+set_false_path -to   [get_ports {HEX0[*]}]
+set_false_path -to   [get_ports {HEX1[*]}]
+set_false_path -to   [get_ports {HEX2[*]}]
+set_false_path -to   [get_ports {HEX3[*]}]
+set_false_path -to   [get_ports {HEX4[*]}]
+set_false_path -to   [get_ports {HEX5[*]}]
